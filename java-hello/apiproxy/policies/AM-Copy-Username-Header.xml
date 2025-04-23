@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="AM-Copy-Username-Header">
+    <Copy source="request">
+        <Headers>
+            <Header name="username"/>
+        </Headers>
+    </Copy>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>
