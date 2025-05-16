@@ -32,7 +32,7 @@ fi
 echo "This script downloads Apigee JAR files and installs them into the local Maven repo."
 
 mkdir java-callout/lib
-mkdir apiproxy/resources/java
+mkdir -p apiproxy/resources/java
 
 curl "https://us-maven.pkg.dev/apigee-release/apigee-java-callout-dependencies/com/apigee/gateway/libraries/message-flow/1.0.0/message-flow-1.0.0.jar" -v -L -o java-callout/lib/message-flow-1.0.0.jar
 
@@ -87,7 +87,6 @@ apigeecli apis deploy --wait --name java-hello --ovr --rev "$REV" --org "$PROJEC
 export PROXY_URL="$APIGEE_HOST/v1/samples/java-hello"
 
 # integration tests
-
 npm run test
 
 echo " "
