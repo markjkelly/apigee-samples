@@ -5,9 +5,9 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.apigee.callout</groupId>
-  <artifactId>apigee-custom-policy-java-hello</artifactId>
-  <version>20240418</version>
-  <name>ApigeeCustomJavaHello</name>
+  <artifactId>apigee-java-callout</artifactId>
+  <version>1.0</version>
+  <name>ApigeeJavaCallout</name>
   <url>http://maven.apache.org</url>
   <packaging>jar</packaging>
   <properties>

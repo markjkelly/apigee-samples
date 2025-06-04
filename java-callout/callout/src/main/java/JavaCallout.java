@@ -21,7 +21,7 @@ import com.apigee.flow.execution.spi.Execution;
 import com.apigee.flow.message.MessageContext;
 import com.apigee.flow.message.Message;
 
-public class HelloJava implements Execution {
+public class JavaCallout implements Execution {
 
   public ExecutionResult execute(MessageContext messageContext, ExecutionContext executionContext) {
 
