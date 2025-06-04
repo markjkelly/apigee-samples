@@ -15,5 +15,5 @@
  limitations under the License.
 -->
 <APIProxy name="java-callout">
-	  <Description>A basic proxy with a Java Callout.</Description>
+	  <Description>A basic proxy demonstrating a Java Callout.</Description>
 </APIProxy>

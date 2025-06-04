@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 
-package com.callout.api;
+package com.google.apigee.callouts;
 
 import com.apigee.flow.execution.ExecutionContext;
 import com.apigee.flow.execution.ExecutionResult;
@@ -27,7 +27,7 @@ public class JavaCallout implements Execution {
 
     try {
 
-      messageContext.getMessage().setContent("Hello, World!");
+      messageContext.getMessage().setContent("Hello, World! - Here's an update");
 
       return ExecutionResult.SUCCESS;
 

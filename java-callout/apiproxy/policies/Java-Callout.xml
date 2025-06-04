@@ -15,6 +15,6 @@
  limitations under the License.
 -->
 <JavaCallout name="Java-Callout">
-  <ClassName>com.callout.api.JavaCallout</ClassName>
+  <ClassName>com.google.apigee.callouts.JavaCallout</ClassName>
   <ResourceURL>java://apigee-java-callout.jar</ResourceURL>
 </JavaCallout>
