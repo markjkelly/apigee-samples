@@ -34,6 +34,12 @@ Refer to Java Callout Policy Documentation for supported Java version informatio
       * resourcemanager.projects.get
       * resourcemanager.projects.list
 
+## (QuickStart) Setup using CloudShell
+
+Use the following GCP CloudShell tutorial, and follow the instructions.
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ssh.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/becarson26/apigee-samples&cloudshell_git_branch=main&cloudshell_workspace=.&cloudshell_tutorial=java-callout/docs/cloudshell-tutorial.md)
+
 ## Setup Instructions
 1. Clone the apigee-samples repo, and switch the java-callout directory
   ```bash
@@ -72,8 +78,6 @@ Refer to Java Callout Policy Documentation for supported Java version informatio
     * `roles/iam.serviceAccountCreator`
     * `roles/resourcemanager.projectIamAdmin`
     * `roles/apigee.apiAdminV2`
-
-   ...then you can use this sample
 
    5. Deploy Apigee API proxy
 
