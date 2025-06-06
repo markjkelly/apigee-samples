@@ -52,7 +52,6 @@ you have these roles:
  * `roles/resourcemanager.projectIamAdmin`
  * `roles/apigee.apiAdminV2`
 
-...then you can use this sample
 ---
 
 ## Deploy Apigee components
