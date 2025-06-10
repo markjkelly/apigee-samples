@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExternalCallout continueOnError="false" enabled="true" name="External-Callout">
+  <GrpcConnection>
+    <Server name="grpc-java-sample-server"/>
+  </GrpcConnection>
+  <TimeoutMs>5000</TimeoutMs>
+</ExternalCallout>
