@@ -44,3 +44,8 @@ apigeecli apis undeploy --name external-callout --env "$APIGEE_ENV" --rev "$REV"
 
 echo "Deleting proxy external-callout"
 apigeecli apis delete --name external-callout --org "$PROJECT" --token "$TOKEN"
+
+echo "Deleting target server"
+apigeecli targetservers delete --name "${GRPC_TARGET_SERVER_NAME}" --org "$PROJECT" --token "$TOKEN"
+
+
