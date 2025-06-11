@@ -43,6 +43,17 @@ npm run lint
 
 echo "Deploying Apigee artifacts..."
 
+apigeecli targetservers create \
+  --name "${GRPC_TARGET_SERVER_NAME}" \
+  --port 443 \
+  --host "${CLOUD_RUN_SERVICE_URL}" \
+  --enable \
+  --tls true \
+  --org "${PROJECT}" \
+  --env "${APIGEE_ENV}" \
+  --protocol GRPC_TARGET \
+  --token "${TOKEN}"
+
 echo "Importing and Deploying Apigee external-callout proxy..."
 REV=$(apigeecli apis create bundle -f apiproxy -n external-callout --org "$PROJECT" --token "$TOKEN" --disable-check | jq ."revision" -r)
 

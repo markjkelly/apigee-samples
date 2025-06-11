@@ -4,4 +4,10 @@
     <Server name="grpc-java-sample-server"/>
   </GrpcConnection>
   <TimeoutMs>5000</TimeoutMs>
+  <Configurations>
+    <Property name="with.request.content">true</Property>
+    <Property name="with.request.headers">true</Property>
+    <Property name="with.response.content">true</Property>
+    <Property name="with.response.headers">true</Property>
+  </Configurations>
 </ExternalCallout>
