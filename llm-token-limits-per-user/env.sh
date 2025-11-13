@@ -1,5 +1,6 @@
-#!/bin/sh
-# Copyright 2020 Google LLC
+#!/bin/bash
+
+# Copyright 2025 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,22 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Ensures that all sub-projects in this repository are listed
-# in the README file in the root of the repository.
+export PROJECT="PROJECT_ID_TO_SET"
+export REGION="REGION_TO_SET"
+export APIGEE_HOST="APIGEE_HOST_TO_SET"
+export APIGEE_ENV="APIGEE_ENV_TO_SET"
 
-set -e
 
-ERRORS=""
-
-for file in "$PWD"/* "$PWD"/apihub-plugins/*; do
-  F=$(basename -- "$file")
-  case $F in
-  *.txt | *.md | tools) continue ;; ##: Skip files that matched.
-  *) grep "^|" README.md | grep "$F" -q || ERRORS="$ERRORS\n[ERROR] missing root README entry for $F" ;;
-  esac
-done
-
-if [ -n "$ERRORS" ]; then
-  echo "$ERRORS"
-  exit 1
-fi
